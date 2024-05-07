@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- <header class="header">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="header-title">John Doe</h1>
+      <p class="header-subtitle">Web Developer | UI/UX Designer | Creative Thinker</p>
+    </div>
+  </header> -->
+  
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <header class="header">
+    <div class="container">
+      <img src="my.jpg" alt="Logo" class="logo">
+      <h1 class="header-title">Amaan Ahmed</h1>
+      <p class="header-subtitle">Web Developer | UI/UX Designer | Creative Thinker</p>
+    </div>
+  </header> -->
+
+  <header class="header" id="header">
+    <div class="container">
+      <img src="my.jpg" alt="Logo" class="logo">
+      <h1 class="header-title">Amaan Ahmed</h1>
+      <p class="header-subtitle">Web Developer | UI/UX Designer | Creative Thinker</p>
+    </div>
+  </header>
+  
+  
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <!-- <p>I am a highly passionate and creative web developer with a keen eye for design and user experience. With a strong background in both front-end and back-end technologies, I strive to create innovative and user-friendly web solutions that leave a lasting impression.</p> -->
+        <p class="about-description">I am a dedicated and experienced web developer with a passion for creating responsive, user-friendly websites and applications. With a strong foundation in front-end and back-end development, I bring a comprehensive approach to every project I work on.</p>
+      </div>
+    </section>
+    
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>Node.js & Express.js</li>
+          <li>Python & Django</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="project">
+            <img src="project1.jpg" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac mauris sed lorem varius gravida non ut quam.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+          <div class="project">
+            <img src="project2.jpg" alt="Project 2" class="project-image">
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac mauris sed lorem varius gravida non ut quam.</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+          <div class="project-card">
+            <!-- <img src="https://images-platform.99static.com//ZUU0DJkgfiPJzVKTgSEaii6H9G8=/5x0:1705x1700/fit-in/590x590/99designs-contests-attachments/111/111213/attachment_111213383" alt="Project 1" class="project-image"> -->
+            <img src="my-porject.png" alt="" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">Clone of website</h3>
+              <p class="project-description">Cloning a website using HTML and CSS</p>
+              <!-- Add other project details, such as links or buttons, here -->
+            </div>
+          </div>
+          <div class="project-card">
+            <!-- <img src="https://opengeekslab.com/wp-content/uploads/2020/01/Technologies-Development-Team.png" alt="Project 2" class="project-image"> -->
+            <img src="screencapture-127-0-0-1-3002-index-html-2024-05-07-22_52_36.png" alt="" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">School notes website </h3>
+              <p class="project-description">Designed and developed a cross-platform for students to access School notes</p>
+              <!-- Add other project details, such as links or buttons, here -->
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Amaan Ahmed. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
